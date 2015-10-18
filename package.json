@@ -1,0 +1,11 @@
+// package.json
+
+{
+    "name": "Nexus",
+    "main": "server.js",
+    "dependencies": {
+        "express": "~4.13.3",
+        "mongoose": "~4.1.11",
+        "body-parser": "~1.14.1"
+    }
+}
