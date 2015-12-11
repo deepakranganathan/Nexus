@@ -2,15 +2,16 @@
 // server.js
 // Includes and Setup
 // --------------------------------------------------------
-var express     = require('express');
-var app         = express();
-var bodyParser  = require('body-parser');
+var express        = require('express');
+var app            = express();
+var bodyParser     = require('body-parser');
+var methodOverride = require('method-override');
 
 // Configure app to use bodyParser()
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// set the static files location /public/img will be /img for users
+// set the static files location /public/foo will be /foo for users
 app.use(express.static(__dirname + '/public')); 
 
 // Connect to MongoDB
